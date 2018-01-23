@@ -1,0 +1,6 @@
+#include "qyfilemanagerinterface.h"
+
+QYFileManagerInterface::QYFileManagerInterface()
+{
+
+}

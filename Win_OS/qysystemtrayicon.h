@@ -2,6 +2,7 @@
 #define QYSYSTEMTRAYICON_H
 
 #include <QObject>
+#include <QAction>
 #include <QSystemTrayIcon>
 
 enum EM_TrayIconEvent

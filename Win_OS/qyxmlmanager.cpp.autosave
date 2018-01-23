@@ -1,0 +1,33 @@
+#include "qyxmlmanager.h"
+
+
+QYXMLManager* QYXMLManager::xml_manager = nullptr;
+QYXMLManager *QYXMLManager::Instance()
+{
+    if(!xml_manager)
+        xml_manager = new QYXMLManager;
+    return xml_manager;
+}
+
+void QYXMLManager::UnInstance()
+{
+    if(xml_manager)
+        delete xml_manager;
+    xml_manager = nullptr;
+}
+
+QYXMLManager::QYXMLManager()
+{
+    
+}
+
+bool QYXMLManager::Get_item_by_ID(std::string ID, list<map<std::string, std::string> > &value)
+{
+    
+}
+
+bool QYXMLManager::Set_item_by_ID(std::string ID, list<map<std::string, std::string> > &value)
+{
+    
+}
+

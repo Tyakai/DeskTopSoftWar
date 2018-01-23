@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include <QSystemTrayIcon>
+#include <qytipdialog.h>
+
 
 namespace Ui {
 class MainWindow;
@@ -16,8 +18,13 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+protected:
 private:
     Ui::MainWindow *ui;
+    QVector<QYTipDialog*> dialog_vector;
+private slots:
+    void create_widget();
 };
+
 
 #endif // MAINWINDOW_H

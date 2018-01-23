@@ -1,0 +1,21 @@
+#ifndef QYXMLMANAGER_H
+#define QYXMLMANAGER_H
+#include <string>
+#include "qydatamanagerinterface.h"
+using std::string;
+class QYXMLManager:public QYDataManagerInterface
+{
+public:
+    static QYXMLManager* Instance();
+    static void UnInstance();
+private:
+    QYXMLManager();
+    static QYXMLManager* xml_manager;
+    bool Get_item_by_ID(string ID,list<map<string ,string> > &value);
+    bool Set_item_by_ID(string ID,list<map<string ,string> > &value);
+    bool Greate_item(string ID, list<map<string,string> > );
+
+
+};
+
+#endif // QYXMLMANAGER_H

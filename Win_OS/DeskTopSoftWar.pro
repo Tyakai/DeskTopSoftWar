@@ -28,16 +28,27 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     qysystemtrayicon.cpp \
-    qyimagehelp.cpp
+    qyimagehelp.cpp \
+    qytipdialog.cpp \
+    qyxmlmanager.cpp \
+    qydatamanagerinterface.cpp \
+    qyfilemanagerinterface.cpp \
+    qyqtfilemanager.cpp
 
 HEADERS += \
         mainwindow.h \
     qysystemtrayicon.h \
     qyimagehelp.h \
-    stable.h
+    stable.h \
+    qytipdialog.h \
+    qyxmlmanager.h \
+    qydatamanagerinterface.h \
+    qyfilemanagerinterface.h \
+    qyqtfilemanager.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    qytipdialog.ui
 
 #程序生成位置
 CONFIG(debug,debug|release):DESTDIR+= $$PWD/Debug/win32

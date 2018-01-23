@@ -1,0 +1,20 @@
+#ifndef QYDATAMANAGER_H
+#define QYDATAMANAGER_H
+//#include "qyxmlmanager.h"
+enum EM_DataSource
+{
+    XMLDATA,
+    DBDATA,
+    JSONDATA,
+};
+
+
+class QYDataManagerInterface
+{
+public:
+    QYDataManagerInterface();
+    static QYDataManagerInterface* CreateObject(EM_DataSource data);
+    static void DeleteObject(EM_DataSource data);
+};
+
+#endif // QYDATAMANAGER_H
